@@ -1,0 +1,106 @@
+<!-- location.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Location - WaveMakers Swim Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional custom styles for better design */
+        header {
+            background-color: #003366; /* Dark blue background for header */
+            color: white;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .location-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .location-section h2 {
+            font-size: 2.5rem;
+            color: #003366; /* Dark blue color for the title */
+        }
+
+        .location-section p {
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .map-container {
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.ibb.co/HLVMNBFX/waveicon-processed.png" alt="Wave Logo" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lessons.html">Lessons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-center">
+        <div class="container">
+            <h1>Our Location</h1>
+            <p class="lead">Visit us at our state-of-the-art swimming facility in Ottawa!</p>
+        </div>
+    </header>
+
+    <!-- Location Section -->
+    <div class="container location-section">
+        <h2>WaveMakers Swim Academy</h2>
+        <p>123 Wave Street<br>
+           Ottawa, ON K1A 0B1<br>
+           Canada</p>
+
+        <!-- Interactive Map (OpenStreetMap) -->
+        <div class="map-container">
+            <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-75.7500%2C45.3050%2C-75.1250%2C45.4550&layer=mapnik"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <p>Come visit us and see how we can help you improve your swimming skills!</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2025 WaveMakers Swim Academy | All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!-- pricing.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pricing - WaveMakers Swim Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        header {
+            background-color: #003366; /* Dark blue background */
+            color: white;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .pricing-section {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+
+        .pricing-title {
+            font-size: 2.5rem;
+            color: #003366;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .pricing-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pricing-card h3 {
+            font-size: 2rem;
+            color: #003366;
+            padding: 15px;
+            margin: 0;
+        }
+
+        .pricing-card p {
+            font-size: 1.2rem;
+            color: #333;
+            padding: 0 15px;
+        }
+
+        .pricing-card .price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #0066cc;
+            padding: 15px;
+        }
+
+        .general-info {
+            color: #003366;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 30px;
+            background-color: white; /* Set to white background */
+        }
+
+
+        /* Ensures all pricing cards have the same size */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 30px; /* Adds vertical space between rows */
+        }
+
+        .col-lg-4, .col-lg-3 {
+            flex: 1 1 calc(33.333% - 20px); /* For a 3x4 grid layout */
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Make sure each pricing card has the same height */
+        .pricing-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card-body {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.ibb.co/HLVMNBFX/waveicon-processed.png" alt="Wave Logo" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lessons.html">Lessons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-center">
+        <div class="container">
+            <h1>Pricing</h1>
+            <p class="lead">Affordable and flexible pricing for all our courses.</p>
+        </div>
+    </header>
+
+    <!-- General Information -->
+    <div class="container py-5 general-info">
+        <h3>General Pricing Information</h3>
+        <p>Our courses vary in price based on the skill level. All courses run once a week for 8 weeks. Prices for younger kids are generally more affordable, and each course is tailored to help students progress at their own pace.</p>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="container pricing-section">
+        <h2 class="pricing-title">Course Pricing</h2>
+
+        <div class="row">
+            <!-- Preschool 1 -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <h3 class="text-center">Preschool 1</h3>
+                    <div class="card-body">
+                        <p class="text-center">This course introduces children to the water in a safe, fun, and engaging environment.</p>
+                    </div>
+                    <div class="price text-center">$85</div>
+                </div>
+            </div>
+            <!-- Preschool 2 -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <h3 class="text-center">Preschool 2</h3>
+                    <div class="card-body">
+                        <p class="text-center">Building on basic water safety skills and floating, this course is designed for kids who are ready to take the next step.</p>
+                    </div>
+                    <div class="price text-center">$95</div>
+                </div>
+            </div>
+            <!-- Preschool 3 -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <h3 class="text-center">Preschool 3</h3>
+                    <div class="card-body">
+                        <p class="text-center">Designed for kids who are comfortable in the water and ready to learn swimming basics with support.</p>
+                    </div>
+                    <div class="price text-center">$105</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Ultra 1 -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <h3 class="text-center">Ultra 1</h3>
+                    <div class="card-body">
+                        <p class="text-center">Ultra 1 is for beginners, focusing on water safety and basic swimming strokes.</p>
+                    </div>
+                    <div class="price text-center">$110</div>
+                </div>
+            </div>
+            <!-- Ultra 2 -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <h3 class="text-center">Ultra 2</h3>
+                    <div class="card-body">
+                        <p class="text-center">Continuing from Ultra 1, this course builds on strokes and introduces more complex techniques.</p>
+                    </div>
+                    <div class="price text-center">$115</div>
+                </div>
+            </div>
+            <!-- Ultra 3 -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <h3 class="text-center">Ultra 3</h3>
+                    <div class="card-body">
+                        <p class="text-center">For swimmers who are mastering their strokes and beginning to refine their technique.</p>
+                    </div>
+                    <div class="price text-center">$120</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Ultra 4 -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <h3 class="text-center">Ultra 4</h3>
+                    <div class="card-body">
+                        <p class="text-center">Focused on increasing endurance and stroke efficiency, perfect for intermediate swimmers.</p>
+                    </div>
+                    <div class="price text-center">$125</div>
+                </div>
+            </div>
+            <!-- Ultra 5 -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <h3 class="text-center">Ultra 5</h3>
+                    <div class="card-body">
+                        <p class="text-center">Enhancing technique and introducing speed work for competitive swimmers.</p>
+                    </div>
+                    <div class="price text-center">$130</div>
+                </div>
+            </div>
+            <!-- Ultra 6 -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <h3 class="text-center">Ultra 6</h3>
+                    <div class="card-body">
+                        <p class="text-center">Aimed at competitive swimmers who want to perfect all strokes and improve speed.</p>
+                    </div>
+                    <div class="price text-center">$135</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Ultra 7 -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <h3 class="text-center">Ultra 7</h3>
+                    <div class="card-body">
+                        <p class="text-center">For those focused on elite level training, refining techniques and preparing for competitions.</p>
+                    </div>
+                    <div class="price text-center">$140</div>
+                </div>
+            </div>
+            <!-- Ultra 8 -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <h3 class="text-center">Ultra 8</h3>
+                    <div class="card-body">
+                        <p class="text-center">Designed for swimmers aiming for high-level competitions and national rankings.</p>
+                    </div>
+                    <div class="price text-center">$145</div>
+                </div>
+            </div>
+            <!-- Ultra 9 -->
+            <div class="col-lg-4">
+                <div class="pricing-card">
+                    <h3 class="text-center">Ultra 9</h3>
+                    <div class="card-body">
+                        <p class="text-center">The final stage for swimmers at the peak of their competition training.</p>
+                    </div>
+                    <div class="price text-center">$150</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2025 WaveMakers Swim Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
